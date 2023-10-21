@@ -1,0 +1,53 @@
+/* App.css */
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#drum-machine {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 250px; /* Фиксированная ширина */
+  background-color: #333; /* Цвет фона drum-machine */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto; /* Центрирование drum-machine по горизонтали */
+}
+
+
+
+.drum-pad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #555; /* Цвет фона drum-pad */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#display {
+  grid-column: 1 / -1; /* Расширяем display на всю ширину drum-machine */
+  text-align: center; /* Выравниваем текст по центру по горизонтали */
+  height: 50px; /* Фиксированная высота display */
+  background-color: #222; /* Цвет фона display */
+  border-radius: 5px;
+  color: white; /* Цвет текста */
+  font-size: 24px; /* Размер шрифта */
+  display: flex; /* Добавляем flex-контейнер */
+  justify-content: center; /* Выравниваем текст по центру по горизонтали */
+  align-items: center; /* Выравниваем текст по центру по вертикали */
+}
+
+
+
+
+.drum-pad:hover {
+  background-color: #777; /* Изменение цвета фона при наведении */
+}
